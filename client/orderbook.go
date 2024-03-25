@@ -209,7 +209,7 @@ func (s *OrderbookService) GetOrdersByCreatorAddress(ctx context.Context, params
 
 // GetAllOrders returns all orders in the Limit Order Protocol
 func (s *OrderbookService) GetAllOrders(ctx context.Context, params models.GetAllOrdersParams) ([]models.OrderResponse, *http.Response, error) {
-	u := fmt.Sprintf("/orderbook/v3.0/%d/all", params.ChainId)
+	u := fmt.Sprintf("/orderbook/v4.0/%d/all", params.ChainId)
 
 	err := params.Validate()
 	if err != nil {
