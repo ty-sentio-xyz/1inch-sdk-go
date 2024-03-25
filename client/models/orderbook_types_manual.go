@@ -23,6 +23,8 @@ type OrderResponse struct {
 		TakingAmount  string `json:"takingAmount"`
 		Maker         string `json:"maker"`
 		Interactions  string `json:"interactions"`
+		Extension     string `json:"extension"`
+		MakerTraits   string `json:"makerTraits"`
 		Offsets       string `json:"offsets"`
 	} `json:"data"`
 	MakerRate          string      `json:"makerRate"`
